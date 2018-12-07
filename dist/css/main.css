@@ -6480,7 +6480,7 @@ header .slider .owl-nav {
 
 .develope {
   padding: 3rem 0;
-  background: url("/img/banner1.png") no-repeat center center fixed;
+  background: url("../img/banner1.png") no-repeat center center fixed;
   background-size: cover; }
   @media (min-width: 768px) {
     .develope {
@@ -6532,7 +6532,7 @@ header .slider .owl-nav {
         color: #00c4c9; } }
 
 .more {
-  background: url("/img/banner2.png") no-repeat center center fixed;
+  background: url("../img/banner2.png") no-repeat center center fixed;
   background-size: cover;
   padding: 2rem 0;
   position: relative;
@@ -6654,7 +6654,7 @@ header .slider .owl-nav {
 
 .customer {
   padding: 3rem 0;
-  background: url("/img/banner3.png") center center no-repeat fixed;
+  background: url("../img/banner3.png") center center no-repeat fixed;
   background-size: cover; }
   .customer .owl-nav .owl-prev, .customer .owl-nav .owl-next {
     position: absolute;
