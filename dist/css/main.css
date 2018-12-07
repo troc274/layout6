@@ -6741,7 +6741,7 @@ header .slider .owl-nav {
       display: inline-block; }
       .team .owl-carousel .owl-nav .owl-prev, .team .owl-carousel .owl-nav .owl-next {
         position: absolute;
-        top: 34%;
+        top: 32%;
         background: #083e64 !important;
         height: 25px;
         width: 25px;
