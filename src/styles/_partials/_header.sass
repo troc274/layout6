@@ -1,10 +1,82 @@
 header
-	.navbar
-		+pad(null 0)
-	.navbar-brand
-		img 
-			max-height: 2rem
-	+media-breakpoint-up(md)
+	.menu
+		background: #fff
 		.navbar-brand
 			img 
-				max-height: 3rem
+				max-height: 2rem
+		.navbar-nav
+			.nav-item
+				color: #000
+		+media-breakpoint-up(lg)
+			.navbar-brand
+				img 
+					max-height: 3rem
+			.navbar-nav
+				.nav-item
+					padding: .5rem 1rem
+					margin-left: .3rem
+					&:hover,&.active
+						background: #00c4c9
+						color: #fff
+	.slider
+		figure
+			figcaption 
+				padding: 1rem 0 0
+				h1 
+					font-size: 1.5rem
+				p 
+					font-size: .9rem
+					margin: 0
+		.owl-nav
+			margin: 0
+			.owl-prev, .owl-next
+				width: 40px
+				height: 40px
+				background: #000000
+				border-radius: 0
+				i
+					 color: #fff
+				&:hover
+					background: #00c4c9
+			.owl-prev
+				left: 1%
+			.owl-next
+				right: 1%
+		+media-breakpoint-up(md)
+			.owl-nav
+				.owl-prev, .owl-next
+					position: absolute
+					top: 44%
+			figure 
+				position: relative
+				figcaption 
+					width: 100%
+					position: absolute
+					bottom: 0
+					color: #fff
+					display: flex
+					flex-direction: column
+					text-shadow: 2px 2px 3px black
+					padding-bottom: 2rem
+					h1 
+						font-size: 1.8rem
+					p 
+						+fz(1rem)
+				&:before
+					content: ''
+					+pos(abs, null null 0 0)
+					display: block
+					width: 100%
+					height: 50%
+					background-image: linear-gradient(#ffffff00, #000000eb)
+		+media-breakpoint-up(lg)
+			figure 
+				figcaption 
+					padding-bottom: 2rem
+					h1 
+						font-size: 2.5rem
+					p
+						font-size: 1.28rem
+
+
+

@@ -17,6 +17,7 @@ gulp.task('default', function (callback) {
 		'clean',
 		'copy-img',
 		'copy-fonts',
+		'copy-webfonts',
 		'copy-favicon',
 		'concat-css',
 		'concat-js',

@@ -31,32 +31,38 @@ $(function () {
 		$('select.form-control').removeClass('form-control').css('width', '100%');
 	}
 });
-// Main
 $(document).ready(function () {
-	// Phần Slider
-	$('.home-slider .owl-carousel').owlCarousel({
+	$('.sl1').owlCarousel({
+		nav: true,
+		loop: true,
 		items: 1,
-		nav: false,
-		dots: true,
+		dots: false,
 		navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>']
 	});
-	// Phần Clients
-	$('.home-clients .owl-carousel').owlCarousel({
-		items: 1,
+	$('.sl2').owlCarousel({
 		nav: true,
+		loop: true,
+		items: 1,
 		dots: false,
 		navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
 		responsive: {
-			// breakpoint from 480 up
-			480: {
-				items: 2
-			},
-			// breakpoint from 768 up
-			768: {
+			1000: {
+				nav: false,
+				dots: true
+			}
+		}
+	});
+	$('.sl3').owlCarousel({
+		nav: true,
+		loop: true,
+		items: 1,
+		dots: false,
+		navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+		responsive: {
+			600: {
 				items: 4
 			},
-			// breakpoint from 992 up
-			992: {
+			1000: {
 				items: 6
 			}
 		}

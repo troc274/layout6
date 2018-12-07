@@ -9,70 +9,221 @@ block variables
 //- Phần khai báo body
 block body
 	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
-	section.home-slider
-		.owl-carousel.owl-theme
-			.item
-				img(src="./img/home_slider_1.jpg", alt="")
-				.title
-					.container
-						.row
-							.col-md-7
-								h2 Chúng tôi là FullStack Vietnam
-								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-			.item
-				img(src="./img/home_slider_1.jpg", alt="")
-				.title
-					.container
-						.row
-							.col-md-7
-								h2 Chúng tôi là FullStack Vietnam
-								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-			.item
-				img(src="./img/home_slider_1.jpg", alt="")
-				.title
-					.container
-						.row
-							.col-md-7
-								h2 Chúng tôi là FullStack Vietnam
-								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-	section.home-news
+	section.news
 		.container
 			.row
-				.col-md-4.item
-					figure
-						.blockimg
-							img(src="./img/home_news_1.jpg", alt="", srcset="")
-						figcaption
-							h3 
-								a(href="#") Chúng tôi là FullStack Vietnam
-							time 22/06/2018
-							p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-				.col-md-4.item
-					figure
-						.blockimg
-							img(src="./img/home_news_2.jpg", alt="", srcset="")
-						figcaption
-							h3 
-								a(href="#") Chúng tôi là FullStack Vietnam
-							time 22/06/2018
-							p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-				.col-md-4.item
-					figure
-						.blockimg
-							img(src="./img/home_news_3.jpg", alt="", srcset="")
-						figcaption
-							h3 
-								a(href="#") Chúng tôi là FullStack Vietnam
-							time 22/06/2018
-							p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-	section.home-clients.mt-5
+				.col-12
+					.title.text-center
+						h1 TIN TỨC
+			.row
+				.col-12.col-sm-6.col-md-4
+					a(href="#")
+						figure
+							.bf
+								img.img-fluid(src="./img/news1.png", alt="")
+							figcaption
+								h6 Trung tâm đào tạo IT chuyên nghiệp
+								p 26/8/2018
+								p Với lợi thế gần khu vực sân bay Long Thành, Nhơn Trạch tiếp tục được hưởng lợi lớn từ dự án trọng điểm của Quốc gia. Sân bay Long Thành quy hoạch đế đón khoảng 100 triệu lượt khách/năm, dự kiến khởi công vào tháng 6/2020 và đưa vào khai thác năm 2025. Bên cạnh việc giảm tải cho sân bay Tân Sơn Nhất
+				.col-12.col-sm-6.col-md-4
+					a(href="#")
+						figure
+							.bf
+								img.img-fluid(src="./img/news2.png", alt="")
+							figcaption
+								h6 Trung tâm đào tạo IT chuyên nghiệp
+								p 26/8/2018
+								p Giữa năm 2017, cầu Cát Lái chính thức được phê duyệt đầu tư với số vốn lên tới 5,700 tỷ đồng. Cầu có chiều dài 4,5 km với 8 làn xe, vận tốc 80 km/h. Theo dự kiến, cầu sẽ hoàn thành trước năm 2020. Cầu Cát Lái có ý nghĩa đặc biệt quan trọng trong việc rút ngắn quãng đường, thời gian di chuyển từ Đồng Nai đến TP.HCM, giãn dân từ TP.HCM về Nhơn Trạch đồng thời đưa Nhơn Trạch trở thành ngoại ô của TP.HCM. 
+				.col-12.col-sm-6.col-md-4
+					a(href="#")
+						figure
+							.bf
+								img.img-fluid(src="./img/news3.png", alt="")
+							figcaption
+								h6 Trung tâm đào tạo IT chuyên nghiệp
+								p 26/8/2018
+								p Dự án đường Vành đai 3 dài 90 km với 6 làn xe, vận tốc di chuyển 100 km/h, đi qua địa phận 4 tỉnh: TPHCM – Nhơn Trạch (Đồng Nai) – Bình Dương – Long An. Dự kiến đến Quý 2/2018 sẽ khởi công đoạn từ ngã tư quận Thủ Đức đến đường 25B (đường Tôn Đức Thắng) 
+	section.develope
 		.container
 			.row
-				.col
-					.owl-carousel.owl-theme
-						- for(x=1;x<10;x++)
-							.item
-								if (x < 7)
-									img(src="./img/clients_"+x+".png", alt="")
-								else
-									img(src="./img/clients_"+(x-3)+".png", alt="")
+				.col-12
+					.title.text-center
+						h1 ĐỊNH HƯỚNG PHÁT TRIỂN
+			.row
+				.col-12.col-sm-6.col-md-3
+					.develope-item
+						a(href="#")
+							i.far.fa-eye
+							h5 Tầm nhìn
+							p Cam kết chất lượng sản phẩm cao nhất</br>Luôn đặt chữ tín lên hàng đầu</br>Lấy lợi ích của khách hàng làm trung tâm hoạt động
+				.col-12.col-sm-6.col-md-3
+					.develope-item
+						a(href="#")
+							i.far.fa-eye
+							h5 Tầm nhìn
+							p Cam kết chất lượng sản phẩm cao nhất</br>Luôn đặt chữ tín lên hàng đầu</br>Lấy lợi ích của khách hàng làm trung tâm hoạt động
+				.col-12.col-sm-6.col-md-3
+					.develope-item
+						a(href="#")
+							i.far.fa-eye
+							h5 Tầm nhìn
+							p Cam kết chất lượng sản phẩm cao nhất</br>Luôn đặt chữ tín lên hàng đầu</br>Lấy lợi ích của khách hàng làm trung tâm hoạt động
+				.col-12.col-sm-6.col-md-3
+					.develope-item
+						a(href="#")
+							i.far.fa-eye
+							h5 Tầm nhìn
+							p Cam kết chất lượng sản phẩm cao nhất</br>Luôn đặt chữ tín lên hàng đầu</br>Lấy lợi ích của khách hàng làm trung tâm hoạt động
+	section.more
+		.container
+			.row
+				.col-12
+					.title-more
+						.row
+							.col-md-8.offset-md-2
+								h4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vel labo-rum, dolorum dicta soluta repellendus minus perferendis excepturi obcaecati porro facere, voluptatem ipsum eum
+								a.btn.btn-more XEM THÊM
+	section.develope2
+		.container
+			.row
+				.col-12
+					.title.text-center
+						h1 ĐỊNH HƯỚNG PHÁT TRIỂN
+				.col-12
+					.tabs
+						ul#pills-tab.nav.nav-pills.d-flex.justify-content-center(role='tablist')
+							li.nav-item
+								a#all-tab.nav-link.active(data-toggle='pill', href='#all', role='tab', aria-controls='all', aria-selected='true') TẤT CẢ
+							li.nav-item
+								a#group-tab.nav-link(data-toggle='pill', href='#group', role='tab', aria-controls='group', aria-selected='false') GROUP
+							li.nav-item
+								a#news-tab.nav-link(data-toggle='pill', href='#news', role='tab', aria-controls='news', aria-selected='false') TIN THỊ TRƯỜNG
+							li.nav-item
+								a#new-fake-tab.nav-link(data-toggle='pill', href='#new-fake', role='tab', aria-controls='new-fake', aria-selected='false') TIN VỊT
+						#pills-tabContent.tab-content
+							#all.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='all-tab')
+								.row
+									.col-12.col-sm-6.col-md-4
+										a(href="#")
+											figure
+												.bf
+													img.img-fluid(src="./img/develope.png", alt="")
+									.col-12.col-sm-6.col-md-4
+										a(href="#")
+											figure
+												.bf
+													img.img-fluid(src="./img/develope.png", alt="")
+									.col-12.col-sm-6.col-md-4
+										a(href="#")
+											figure
+												.bf
+													img.img-fluid(src="./img/develope.png", alt="")
+							#group.tab-pane.fade(role='tabpanel', aria-labelledby='group-tab')
+								.row
+									.col-12.col-sm-6.col-md-4
+										a(href="#")
+											figure
+												.bf
+													img.img-fluid(src="./img/news1.png", alt="")
+									.col-12.col-sm-6.col-md-4
+										a(href="#")
+											figure
+												.bf
+													img.img-fluid(src="./img/develope.png", alt="")
+									.col-12.col-sm-6.col-md-4
+										a(href="#")
+											figure
+												.bf
+													img.img-fluid(src="./img/develope.png", alt="")
+							#news.tab-pane.fade(role='tabpanel', aria-labelledby='news-tab') 
+								.row
+									.col-12.col-sm-6.col-md-4
+										a(href="#")
+											figure
+												.bf
+													img.img-fluid(src="./img/news2.png", alt="")
+									.col-12.col-sm-6.col-md-4
+										a(href="#")
+											figure
+												.bf
+													img.img-fluid(src="./img/develope.png", alt="")
+									.col-12.col-sm-6.col-md-4
+										a(href="#")
+											figure
+												.bf
+													img.img-fluid(src="./img/develope.png", alt="")
+							#new-fake.tab-pane.fade(role='tabpanel', aria-labelledby='new-fake-tab') 
+								.row
+									.col-12.col-sm-6.col-md-4
+										a(href="#")
+											figure
+												.bf
+													img.img-fluid(src="./img/develope.png", alt="")
+									.col-12.col-sm-6.col-md-4
+										a(href="#")
+											figure
+												.bf
+													img.img-fluid(src="./img/develope.png", alt="")
+									.col-12.col-sm-6.col-md-4
+										a(href="#")
+											figure
+												.bf
+													img.img-fluid(src="./img/develope.png", alt="")
+	section.customer
+		.container
+			.row
+				.col-12
+					.title.text-center
+						h1 KHÁCH HÀNG NÓI
+				.col-12.mt-4
+					.owl-carousel.owl-theme.sl2
+						.item
+							.container
+								.row
+									.col-md-6.offset-md-3
+										figure.d-flex.justify-content-center.align-items-center.flex-column.text-center
+											.img-customer
+												img.img-fluid(src="./img/customer.png", alt="")
+											figcaption
+												p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac condimentum mi, vitae iaculis ante. Suspendisse viverra urna quis diam sodales, convallis auctor nibh.
+												a Pelican Steve
+												h6 CEO ABC Company
+						.item
+							.container
+								.row
+									.col-md-6.offset-md-3
+										figure.d-flex.justify-content-center.align-items-center.flex-column.text-center
+											.img-customer
+												img.img-fluid(src="./img/customer.png", alt="")
+											figcaption
+												p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac condimentum mi, vitae iaculis ante. Suspendisse viverra urna quis diam sodales, convallis auctor nibh.
+												a Pelican Steve
+												h6 CEO ABC Company
+						.item
+							.container
+								.row
+									.col-md-6.offset-md-3
+										figure.d-flex.justify-content-center.align-items-center.flex-column.text-center
+											.img-customer
+												img.img-fluid(src="./img/customer.png", alt="")
+											figcaption
+												p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac condimentum mi, vitae iaculis ante. Suspendisse viverra urna quis diam sodales, convallis auctor nibh.
+												a Pelican Steve
+												h6 CEO ABC Company
+	section.team
+		.container
+			.row
+				.col-12
+					.owl-carousel.owl-theme.sl3.d-flex.align-items-center
+						.item
+							img.img-fluid(src="./img/donors1.png", alt="")
+						.item
+							img.img-fluid(src="./img/donors2.png", alt="")
+						.item
+							img.img-fluid(src="./img/donors3.png", alt="")
+						.item
+							img.img-fluid(src="./img/donors4.png", alt="")
+						.item
+							img.img-fluid(src="./img/donors5.png", alt="")
+						.item
+							img.img-fluid(src="./img/donors6.png", alt="")

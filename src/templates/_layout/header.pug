@@ -1,28 +1,40 @@
 <!-- ////////////// HEADER ////////////// -->
-header.bg-light
-	.container
-		nav.navbar.navbar-expand-lg.navbar-light
-			a.navbar-brand(href="#") 
-				img(src="./img/logo.png", alt="Logo")
-			//- Đây là nút sẽ hiển thị trong mobile
-			button.navbar-toggler(type="button" data-toggle="collapse" data-target="#fullStackMenu" aria-controls="fullStackMenu" aria-expanded="false" aria-label="Toggle navigation")
-				span.fa.fa-bars
-			#fullStackMenu.collapse.navbar-collapse
-				//- Thuộc tính '.mr-auto' này sẽ đẩy me nu về bên phải 
-				.mr-auto
-				ul.navbar-nav
-					li.nav-item.active
-						a.nav-link(href="index.html")
-							| Trang chủ
-					li.nav-item.dropdown
-						a#dropdownFS.nav-link.dropdown-toggle(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Gian hàng
-						.dropdown-menu(aria-labelledby="dropdownFS")
-							a.dropdown-item(href="#") Nam
-							a.dropdown-item(href="#") Nữ
-					li.nav-item
-						a.nav-link(href="services.html") Dịch vụ
-					li.nav-item
-						a.nav-link(href="about.html") Về chúng tôi
-					li.nav-item
-						a.nav-link(href="contact.html") Liên hệ
+header
+	.menu
+		.container
+			.row
+				.col-12
+					nav.navbar.navbar-expand-lg.navbar-light
+						a.navbar-brand(href='#')
+							img.img-fluid(src="./img/logo.png", alt="")
+						button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavAltMarkup', aria-controls='navbarNavAltMarkup', aria-expanded='false', aria-label='Toggle navigation')
+							span.navbar-toggler-icon
+						#navbarNavAltMarkup.collapse.navbar-collapse
+							.navbar-nav.ml-auto
+								a.nav-item.nav-link.active(href='#')
+									| Home 
+									span.sr-only (current)
+								a.nav-item.nav-link(href='#') Services
+								a.nav-item.nav-link(href='#') About
+								a.nav-item.nav-link(href='#') Contact
+	.slider
+		.owl-carousel.owl-theme.sl1
+			.item
+				figure
+					img.img-fluid(src="./img/slider1.png", alt="")
+					.container
+						.row
+							.col-md-6.offset-md-3
+								figcaption.text-center
+									h1 Chúng tôi là FullStack Việt Nam
+									p Full Stack Developer là nghề cực hot hiện nay, những lập trình viên- Full Stack có đầy đủ các kỹ năng tổng hợp
+			.item
+				figure
+					img.img-fluid(src="./img/slider2.png", alt="")
+					.container
+						.row
+							.col-md-6.offset-md-3
+								figcaption.text-center
+									h1 Chúng tôi là FullStack Việt Nam
+									p Full Stack Developer là nghề cực hot hiện nay, những lập trình viên- Full Stack có đầy đủ các kỹ năng tổng hợp
 <!-- ////////////// HEADER ////////////// -->

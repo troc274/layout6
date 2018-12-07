@@ -1,67 +1,452 @@
 /////////////////////////////////
 // Phần Slider
 /////////////////////////////////
-.home-slider
-	.owl-carousel
-		// Phần Slider
-		.item
-			position: relative
-			.title
-				+pad(2rem 0)
-				height: 100%
+.news
+	padding-bottom: 2rem
+	.title
+		padding: 1rem 0 0
+		h1
+			display: flex
+			justify-content: center
+			align-items: center
+			font-weight: 900
+			font-size: 1.5rem
+			&:before
+				content: ''
+				background: #00c4c9
+				width: 5rem
+				position: absolute
+				height: 2px
+				bottom: 0
+				transform: translateY(50%)
+			&:after
+				content: ''
+				background: #fff
+				width: 15px
+				height: 15px
+				position: absolute
+				bottom: 0
+				border: 3px solid #00c4c9
+				border-radius: 50%
+				transform: translateY(50%)
+		+media-breakpoint-up(lg)
+			h1
+				font-size: 2.14rem
+				padding-top: 2rem
+	a 
+		color: #000
+		text-decoration: none
+		figure 
+			padding-top: 2rem
+			img 
 				width: 100%
-				display: flex
-				align-items: center
-			+media-breakpoint-up(md)
-				.title
-					+pos(abs, 0 null null 0)
-					color: $whites
-					+text-shadow()
-					h2
-						+fz(3rem)
-					p 
-						+fz(1.5rem)
-						+lh(2rem)
-		// Phần Control
-		.owl-dots
-			margin-bottom: 2rem
-/////////////////////////////////
-// Phần News
-/////////////////////////////////
-
-.home-news
-	.item 
-		figure
-			.blockimg
-				+bor-rad(10px)
-				overflow: hidden
-				img
+			.bf
+				position: relative
+				&:before
+					content: ''
+					position: absolute
 					width: 100%
+					height: 100%
+					box-shadow: inset 0px 0px 0px 3px #00c4c9	
 			figcaption 
-				margin-top: 1rem
-				h3 
-					+fz(1.1rem)
-					margin-bottom: 0
-				time 
-					+fz(.85rem)
-					color: darken($whites,30%)
+				padding: 1rem 0
 				p 
-					margin-top: .5rem
-					color: darken($whites,50%)
-/////////////////////////////////
-// Phần News
-/////////////////////////////////
-
-.home-clients
+					color: #000
+		+media-breakpoint-up(lg)
+			figure
+				padding-top: 3rem
+				img
+					filter: grayscale(100%)
+				figcaption 
+					h6 
+						font-size: 1.14rem
+					p 
+						color: #bfbfbf
+						max-height: 4.5rem
+						overflow: hidden
+				&:hover
+					img 
+						filter: none
+						transition: .5s ease-in-out
+					.bf
+						position: relative
+						&:before
+							content: ''
+							position: absolute
+							width: 100%
+							height: 100%
+							box-shadow: inset 0px 0px 0px 3px #00c4c9
+							z-index: 2
+					figcaption
+						h6 
+							color: #00c4c9
+						p 
+							color: #000
+.develope
+	padding: 3rem 0
+	background: url('../img/banner1.png') no-repeat center center fixed
+	background-size: cover
+	+media-breakpoint-up(md)
+		padding: 5rem 0
+	.title
+		padding: 1rem 0
+		h1
+			display: flex
+			justify-content: center
+			align-items: center
+			font-weight: 600
+			font-size: 1.5rem
+			&:before
+				content: ''
+				background: #00c4c9
+				width: 4rem
+				position: absolute
+				height: 3px
+				bottom: 0
+				transform: translateY(50%)
+			&:after
+				content: ''
+				background: #fff
+				width: 15px
+				height: 15px
+				position: absolute
+				bottom: 0
+				border: 3px solid #00c4c9
+				border-radius: 50%
+				transform: translateY(50%)
+		+media-breakpoint-up(lg)
+			h1
+				font-size: 2.14rem
+				padding-top: 2rem
+	.develope-item
+		padding: 1rem 2rem
+		a 
+			text-decoration: none
+			color: #000000
+			padding: 2rem 0
+			i
+				font-size: 6rem
+			h5 
+				padding: 1rem 0
+			p 
+				color: #787878
+		+media-breakpoint-up(md)
+			&:hover
+				a 
+					i, h5
+						color: #00c4c9
+.more
+	background: url('../img/banner2.png') no-repeat center center fixed
+	background-size: cover
+	padding: 2rem 0
+	position: relative
+	width: 100%
+	&:before
+		content: ''
+		background: #0000007a
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+	.title-more
+		color: #ffffff
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		text-align: center
+		padding: 1rem 0
+		h4 
+			font-size: 1rem
+			padding: .5rem 0
+			font-weight: 400
+		.btn-more
+			padding: .2rem 1rem
+			background: #00c4c9
+			border-radius: 2rem
+			font-weight: 600
+			font-size: .8rem
+	+media-breakpoint-up(md)
+		.title-more
+			padding: 2rem 0
+			h4 
+				font-size: 1.3rem
+			.btn-more
+				font-size: 1rem
+	+media-breakpoint-up(lg)
+		.title-more
+			h4
+				font-size: 1.71rem
+				padding-bottom: 3rem
+			.btn-more
+				font-size: 1.28rem
+				padding: .5rem 3rem
+.develope2
+	padding: 1rem 0
+	.title
+		padding: 1rem 0
+		h1
+			display: flex
+			justify-content: center
+			align-items: center
+			font-weight: 600
+			font-size: 1.5rem
+			&:before
+				content: ''
+				background: #00c4c9
+				width: 4rem
+				position: absolute
+				height: 3px
+				bottom: 0
+				transform: translateY(50%)
+			&:after
+				content: ''
+				background: #fff
+				width: 15px
+				height: 15px
+				position: absolute
+				bottom: 0
+				border: 3px solid #00c4c9
+				border-radius: 50%
+				transform: translateY(50%)
+		+media-breakpoint-up(lg)
+			h1
+				font-size: 2.14rem
+				padding-top: 2rem
+	.tabs
+		ul 
+			margin: 3rem 0 0
+			.nav-link
+				font-weight: 600
+				color: #000	
+				padding: .2rem 1rem
+				&.active
+					color: #ffffff
+					background: #00c4c9
+					border-radius: 2rem
+	a 
+		color: #000
+		text-decoration: none
+		font-size: .8rem
+		figure 
+			padding-top: 2rem
+			img 
+				width: 100%
+			.bf
+				position: relative
+				&:before
+					content: ''
+					position: absolute
+					width: 100%
+					height: 100%
+					box-shadow: inset 0px 0px 0px 3px #00c4c9	
+		+media-breakpoint-up(md)
+			font-size: 1rem
+			figure
+				img
+					filter: grayscale(100%)
+				&:hover
+					img 
+						filter: none
+					.bf
+						position: relative
+						&:before
+							content: ''
+							position: absolute
+							width: 100%
+							height: 100%
+							box-shadow: inset 0px 0px 0px 3px #00c4c9
+							z-index: 2
+.customer
+	padding: 3rem 0
+	background: url('../img/banner3.png') center center no-repeat fixed
+	background-size: cover
+	.owl-nav
+		.owl-prev, .owl-next
+			position: absolute
+			top: 25%
+			background: #333 !important
+			height: 40px
+			width: 40px
+			color: #fff !important
+		.owl-prev
+			left: 2px
+		.owl-next
+			right: 2px
+	.owl-dots
+		.owl-dot
+			outline: none	
+			&.active
+				span 
+					background: #00c4c9	
+		+media-breakpoint-up(md)
+			margin: 0 !important
+	.title
+		padding: 1rem 0
+		h1
+			display: flex
+			justify-content: center
+			align-items: center
+			font-weight: 600
+			font-size: 1.5rem
+			&:before
+				content: ''
+				background: #00c4c9
+				width: 4rem
+				position: absolute
+				height: 3px
+				bottom: 0
+				transform: translateY(50%)
+			&:after
+				content: ''
+				background: #fff
+				width: 15px
+				height: 15px
+				position: absolute
+				bottom: 0
+				border: 3px solid #00c4c9
+				border-radius: 50%
+				transform: translateY(50%)
+		+media-breakpoint-up(lg)
+			h1
+				font-size: 2.14rem
+				padding-top: 2rem
+	.item
+		figure
+			.img-customer
+				padding: 2rem 0
+				img 
+					border-radius: 50%
+					border: 3px solid #00c4c9
+			figcaption
+				p 
+					padding: 0 1rem
+					font-style: italic
+				a 
+					font-weight: 500
+					color: #00c4c9
+				h6
+					font-size: .9rem
+					padding: .3rem 0
+			+media-breakpoint-up(md)
+				figcaption
+					display: flex
+					justify-content: center
+					flex-direction: column
+					p 
+						padding: 0 1rem 2rem
+						font-size: 1.14rem
+						margin: 0
+					a 
+						font-size: 1.28rem
+					h6 
+						font-size: 1rem
+						margin: 0
+.team
+	padding: 2rem 0
 	.owl-carousel
-		.item 
-			+pad(.5rem)
-		// Phần Control
+		position: relative
 		.owl-nav
-			margin-bottom: 2rem
-			button 
-				i 
-					display: block
-					width: 2rem
-					height: 2rem
-					+lh(2rem)
+			display: inline-block
+			.owl-prev, .owl-next
+				position: absolute
+				top: 34%
+				background: #083e64 !important
+				height: 25px
+				width: 25px
+				color: #fff !important
+				font-size: 9px
+			.owl-prev
+				left: 0
+			.owl-next
+				right: 0
+		.owl-stage
+			display: flex
+			align-items: center
+			.item
+				padding: 2rem 0
+				img 
+					max-height: 4rem
+					max-width: 40%
+					margin: 0 auto
+		+media-breakpoint-up(md)
+			.owl-nav
+				.owl-prev
+					left: -4%
+				.owl-next
+					right: -4%
+			.owl-stage
+				.item
+					padding: 2rem 0
+					img 
+						max-height: 6rem
+						max-width: 60%
+footer
+	.contact
+		padding: 2rem 0
+		background: #00c4c9
+		h4 
+			padding-top: 1rem
+			color: #083e64
+		ul 
+			padding: 0
+			li 
+				list-style-type: none
+				color: #7bfcff
+				a 
+					color: #7bfcff
+					text-decoration: none
+		.input-mail
+			position: relative
+			.btn-form
+				background: #083e64
+				border: 0
+				padding: .5rem
+				width: 100%
+			.btn-email
+				width: 5rem
+				background: #09f9ff
+				position: absolute
+				right: 3px
+				top: 8%
+				border: 0
+				height: 84%
+			input[type="text"]
+				color: #fff
+				&::placeholder
+					font-style: italic
+					color: #426b88
+			input[type="submit"]
+				font-weight: 600
+				color: #083e64
+	.coppyright
+		background: #083e64
+		padding: 1rem 0
+		display: flex
+		align-items: center
+		text-align: center
+		p 
+			color: #fff
+			margin: 0
+		ul 	
+			margin-top: 1rem
+			padding: 0
+			+media-breakpoint-up(md)
+				text-align: right
+				margin: 0
+			li 
+				display: inline-flex
+				margin: 0 .5rem
+				width: 40px
+				height: 40px
+				border-radius: 50%
+				background: #fff
+				justify-content: center
+				align-items: center
+				a 
+					color: #083e64
+
+
+
+
+
