@@ -6402,19 +6402,19 @@ header .slider .owl-nav {
 .news {
   padding-bottom: 2rem; }
   .news .title {
-    padding: 1rem 0 0; }
+    padding: 1rem 0 .3rem; }
     .news .title h1 {
       display: flex;
       justify-content: center;
       align-items: center;
-      font-weight: 900;
+      font-weight: 600;
       font-size: 1.5rem; }
       .news .title h1:before {
         content: '';
         background: #00c4c9;
         width: 5rem;
         position: absolute;
-        height: 2px;
+        height: 3px;
         bottom: 0;
         transform: translateY(50%); }
       .news .title h1:after {
@@ -6486,7 +6486,7 @@ header .slider .owl-nav {
     .develope {
       padding: 5rem 0; } }
   .develope .title {
-    padding: 1rem 0; }
+    padding: 1rem 0 .3rem; }
     .develope .title h1 {
       display: flex;
       justify-content: center;
@@ -6496,7 +6496,7 @@ header .slider .owl-nav {
       .develope .title h1:before {
         content: '';
         background: #00c4c9;
-        width: 4rem;
+        width: 5rem;
         position: absolute;
         height: 3px;
         bottom: 0;
@@ -6580,7 +6580,7 @@ header .slider .owl-nav {
 .develope2 {
   padding: 1rem 0; }
   .develope2 .title {
-    padding: 1rem 0; }
+    padding: 1rem 0 .3rem; }
     .develope2 .title h1 {
       display: flex;
       justify-content: center;
@@ -6590,7 +6590,7 @@ header .slider .owl-nav {
       .develope2 .title h1:before {
         content: '';
         background: #00c4c9;
-        width: 4rem;
+        width: 5rem;
         position: absolute;
         height: 3px;
         bottom: 0;
@@ -6675,7 +6675,7 @@ header .slider .owl-nav {
     .customer .owl-dots {
       margin: 0 !important; } }
   .customer .title {
-    padding: 1rem 0; }
+    padding: 1rem 0 .3rem; }
     .customer .title h1 {
       display: flex;
       justify-content: center;
@@ -6685,7 +6685,7 @@ header .slider .owl-nav {
       .customer .title h1:before {
         content: '';
         background: #00c4c9;
-        width: 4rem;
+        width: 5rem;
         position: absolute;
         height: 3px;
         bottom: 0;
